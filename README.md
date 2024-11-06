@@ -1,0 +1,1 @@
+# freetier-aws-wireguard
