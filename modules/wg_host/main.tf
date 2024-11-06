@@ -26,7 +26,7 @@ data "aws_ami" "ubuntu" {
 
 
 resource "aws_security_group_rule" "allow_wg_in" {
-  type              = "egress"
+  type              = "ingress"
   from_port         = var.wg_server_config.wg_port
   to_port           = var.wg_server_config.wg_port
   protocol    = "udp"

@@ -4,7 +4,7 @@ locals {
   client_routes = [
     module.base.vpc_cidr_block, # All IPs in the VPC
     "169.254.169.253/32",        # AWS DNS
-    "0.0.0.0/32",                # Route all traffic through VPN 
+    "0.0.0.0/0",                # Route all traffic through VPN 
   ]
 }
  
